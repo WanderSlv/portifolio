@@ -285,12 +285,12 @@ export const TIMELINE_DATA: TimelineItem[] = [
     skills: ['Lógica de Programação', 'Java', 'Spring Boot', 'Bancos de Dados'],
   },
   {
-    year: 'Formação Acadêmica',
+    year: 'Graduação (Em Andamento)',
     title: 'Engenharia de Telecomunicações',
     institution: 'Instituto Federal de Santa Catarina (IFSC)',
     location: 'Santa Catarina, Brasil',
     type: 'academic',
-    description: 'Graduação em Engenharia com sólida formação em raciocínio analítico, sinais, redes de comunicação, algoritmos e sistemas de computação.',
+    description: 'Graduando em Engenharia de Telecomunicações com sólida base em raciocínio analítico, sinais, redes de comunicação, algoritmos e sistemas de computação.',
     skills: ['Engenharia', 'Telecomunicações', 'Redes de Comunicação', 'Lógica & Algoritmos', 'Sistemas Computacionais'],
   },
 ];
