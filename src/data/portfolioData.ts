@@ -286,11 +286,11 @@ export const TIMELINE_DATA: TimelineItem[] = [
   },
   {
     year: 'Formação Acadêmica',
-    title: 'Desenvolvimento de Sistemas & Tecnologia',
+    title: 'Engenharia de Telecomunicações',
     institution: 'Instituto Federal de Santa Catarina (IFSC)',
     location: 'Santa Catarina, Brasil',
     type: 'academic',
-    description: 'Fundamentos acadêmicos em tecnologia, raciocínio lógico, sistemas de informação e estrutura de computação.',
-    skills: ['Lógica', 'Algoritmos', 'Sistemas de Informação', 'Tecnologia'],
+    description: 'Graduação em Engenharia com sólida formação em raciocínio analítico, sinais, redes de comunicação, algoritmos e sistemas de computação.',
+    skills: ['Engenharia', 'Telecomunicações', 'Redes de Comunicação', 'Lógica & Algoritmos', 'Sistemas Computacionais'],
   },
 ];
