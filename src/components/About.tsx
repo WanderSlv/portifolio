@@ -1,49 +1,49 @@
 import React from 'react';
 import {
-  Server,
   Layers,
   Bot,
   Zap,
-  Sparkles
+  Sparkles,
+  Workflow
 } from 'lucide-react';
 
 export const About: React.FC = () => {
   const pillars = [
     {
-      icon: Server,
-      title: 'Back-End & Arquitetura Robusta',
-      description:
-        'Desenvolvimento de APIs RESTful estruturadas em camadas, com persistência relacional (PostgreSQL/MySQL), segurança avançada e boas práticas com Java/Spring Boot e Node.js.',
-      color: 'from-orange-500/20 to-amber-500/10 border-orange-500/30 text-orange-400',
-    },
-    {
-      icon: Layers,
-      title: 'Front-End Moderno & Responsivo',
-      description:
-        'Criação de SPAs velozes e interfaces amigáveis com React, Next.js e Tailwind CSS, além de softwares desktop multiplataforma com Tauri e Rust.',
-      color: 'from-blue-500/20 to-cyan-500/10 border-blue-500/30 text-blue-400',
-    },
-    {
       icon: Bot,
-      title: 'IA & Visão Computacional',
+      title: 'Desenvolvimento Potencializado por IA',
       description:
-        'Implementação de redes neurais com YOLOv8, OCR com EasyOCR e processamento de imagens com OpenCV e Python FastAPI para detecção automatizada e controle de acesso.',
+        'Criação acelerada de software utilizando inteligência artificial generativa, agentes e prompts estruturados para modelar regras, interfaces e bancos de dados.',
       color: 'from-purple-500/20 to-pink-500/10 border-purple-500/30 text-purple-400',
     },
     {
       icon: Zap,
       title: 'Automações & Web Crawlers',
       description:
-        'Desenvolvimento de bots, scrapers para monitoramento de tarifas aéreas e ingressos, rotinas em background e integrações de canais comerciais.',
+        'Desenvolvimento de robôs e scripts para monitoramento de tarifas aéreas, ingressos em tempo real e rotinas que poupam tempo e aumentam a produtividade.',
       color: 'from-emerald-500/20 to-teal-500/10 border-emerald-500/30 text-emerald-400',
+    },
+    {
+      icon: Layers,
+      title: 'Sistemas Web, Desktop & Chatbots',
+      description:
+        'Construção de aplicações completas como plataformas comerciais (AutoBot), softwares corporativos com Tauri e painéis com React e Tailwind CSS.',
+      color: 'from-blue-500/20 to-cyan-500/10 border-blue-500/30 text-blue-400',
+    },
+    {
+      icon: Workflow,
+      title: 'Visão Computacional & IA Aplicada',
+      description:
+        'Implementação assistida por IA de modelos de detecção veicular (YOLOv8) e OCR de placas (EasyOCR) integrados a APIs de consulta.',
+      color: 'from-orange-500/20 to-amber-500/10 border-orange-500/30 text-orange-400',
     },
   ];
 
   const stats = [
-    { value: '8+', label: 'Projetos & MVPs Desenvolvidos' },
-    { value: '4+', label: 'Linguagens & Ecossistemas' },
-    { value: '100%', label: 'Clean Code & Tipagem Estrita' },
-    { value: '24/7', label: 'Compromisso com Qualidade' },
+    { value: '8+', label: 'Projetos Funcionais Criados com IA' },
+    { value: '100%', label: 'Foco em Resolver Problemas Reais' },
+    { value: 'AI First', label: 'Prototipagem Ágil & Inovação' },
+    { value: 'Contínuo', label: 'Evolução e Aprendizado' },
   ];
 
   return (
@@ -56,13 +56,13 @@ export const About: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-950/50 border border-purple-800/40 text-purple-400 text-xs font-mono uppercase tracking-wider mb-4">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Engenharia & Soluções</span>
+            <span>Abordagem & Filosofia</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Sobre Minha Atuação Profissional
+            Como Transformo Ideias em Soluções
           </h2>
           <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
-            Combinando disciplina acadêmica pelo <span className="text-white font-medium">Instituto Federal de Santa Catarina (IFSC)</span> com constante aprofundamento prático em tecnologias modernas de mercado.
+            Utilizo a Inteligência Artificial como uma parceira poderosa para prototipar, programar e validar soluções digitais que resolvem dores reais de forma eficiente.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-[#121522] via-[#161a2e] to-[#121522] border border-purple-900/30 shadow-xl">
           {stats.map((stat, idx) => (
             <div key={idx} className="text-center">
-              <div className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-mono mb-1">
+              <div className="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-mono mb-1">
                 {stat.value}
               </div>
               <div className="text-xs sm:text-sm text-gray-400 font-medium">

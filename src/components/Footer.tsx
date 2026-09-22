@@ -1,7 +1,7 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './Icons';
-import { Mail, ArrowUp, Code2 } from 'lucide-react';
+import { Mail, ArrowUp, Bot } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -15,11 +15,11 @@ export const Footer: React.FC = () => {
           {/* Logo & Tagline */}
           <div className="flex flex-col items-center md:items-start gap-1">
             <div className="flex items-center gap-2 font-mono font-bold text-white text-base">
-              <Code2 className="w-5 h-5 text-purple-400" />
+              <Bot className="w-5 h-5 text-purple-400" />
               <span>{PERSONAL_INFO.name}</span>
             </div>
             <p className="text-xs text-gray-400">
-              Desenvolvedor Full Stack • Java • React • TypeScript • Python
+              Criação de Soluções, Automações & Sistemas com Inteligência Artificial
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export const Footer: React.FC = () => {
           <span>© {new Date().getFullYear()} {PERSONAL_INFO.fullName}. Todos os direitos reservados.</span>
           <span className="hidden sm:inline">•</span>
           <span className="flex items-center gap-1">
-            Desenvolvido com React, TypeScript & Tailwind CSS
+            Projetado com React, TypeScript, Tailwind CSS & IA
           </span>
         </div>
       </div>

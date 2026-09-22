@@ -1,23 +1,23 @@
-# 🚀 Portfólio Profissional — Wander Silva
+# 🚀 Portfólio — Wander Silva | Criação de Soluções & Automações com IA
 
 Portfólio moderno, responsivo e interativo desenvolvido com **React 18**, **TypeScript**, **Tailwind CSS v4**, **Vite** e **Lucide Icons**.
 
-Construído com base no perfil profissional de [Wander Silva](https://www.linkedin.com/in/wander-silva-andrade/) e nos projetos do [GitHub](https://github.com/WanderSlv).
+Apresenta projetos, automações e sistemas funcionais desenvolvidos por [Wander Silva](https://www.linkedin.com/in/wander-silva-andrade/) através do direcionamento e potencialização com **Inteligência Artificial**.
 
 ---
 
 ## ✨ Funcionalidades Principais
 
-- ⚡ **Hero Section Dinâmica**: Typewriter com múltiplos papéis (Java/Spring Boot, React/TS, Python/IA), avatar com efeito de brilho e botões de ação direta.
-- 🎯 **Sobre Mim & Pilares de Engenharia**: Destaque para Clean Architecture, Visão Computacional, Automações e Formação pelo **IFSC**.
-- 🛠️ **Skill Matrix Interativa**: Categorias navegáveis (Back-End, Front-End, Bancos de Dados & Cloud, IA & Automações) com níveis de proficiência.
-- 📂 **Galeria de Projetos Filtrável & Busca em Tempo Real**:
-  - Filtros rápidos por categoria (*Full Stack*, *Back-End*, *IA & Automação*, *Desktop*)
-  - Barra de busca instantânea por tecnologia, nome ou palavra-chave
-  - Modal com detalhamento técnico completo de arquitetura, features e links.
-- 🎓 **Trajetória & Formação (Timeline)**: Linha do tempo acadêmica e profissional (IFSC, Alura, Projetos Autônomos).
+- ⚡ **Hero Section Dinâmica**: Typewriter com foco em *Criador de Soluções com IA*, *Automações*, *Chatbots* e *Prototipagem Ágil*.
+- 🎯 **Sobre Mim & Filosofia**: Como a IA é utilizada como catalisador para resolver problemas reais e criar aplicações funcionais.
+- 🛠️ **Ferramentas & Stacks Utilizadas com IA**: Categorias navegáveis (IA/Agentes, Back-End/DB, Front-End/Desktop, DevOps/Ambiente).
+- 📂 **Galeria de Projetos Criados com IA**:
+  - Filtros rápidos por categoria (*Sistemas & Web*, *Automações & Bots*, *Visão Computacional & IA*, *Desktop*)
+  - Barra de busca instantânea por tecnologia, nome ou ferramenta
+  - Modal com detalhamento técnico completo de funcionalidades, arquitetura e links.
+- 🎓 **Trajetória & Formação (Timeline)**: Linha do tempo acadêmica (IFSC) e evolução prática com IA.
 - 💻 **Terminal CLI Interativo no Navegador**:
-  - Comandos como `help`, `about`, `skills`, `projects`, `contact`, `clear` e o especial `sudo hire` com chuva de confetes 🎉!
+  - Comandos como `help`, `about`, `skills`, `projects`, `contact`, `clear` e o comando especial `sudo hire` com chuva de confetes 🎉!
 - 📬 **Seção de Contato Completa**: Cópia de e-mail com 1 clique, links diretos para LinkedIn/GitHub e formulário rápido de mensagem.
 - 📱 **100% Responsivo & Dark Mode Nativo**: Estética moderna inspirada no tema Dracula & Midnight.
 
@@ -51,17 +51,3 @@ Construído com base no perfil profissional de [Wander Silva](https://www.linked
    ```bash
    npm run build
    ```
-
----
-
-## 📦 Como Publicar / Deploy
-
-### Vercel
-1. Instale o CLI da Vercel (`npm i -g vercel`) ou conecte o repositório no [vercel.com](https://vercel.com).
-2. Execute:
-   ```bash
-   npx vercel
-   ```
-
-### GitHub Pages / Netlify / Render
-Basta conectar o repositório e configurar o comando de build como `npm run build` e o diretório de saída como `dist`.

@@ -10,13 +10,13 @@ export const Experience: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/50 border border-emerald-800/40 text-emerald-400 text-xs font-mono uppercase tracking-wider mb-4">
             <GraduationCap className="w-3.5 h-3.5" />
-            <span>Educação & Carreira</span>
+            <span>Aprendizado & Projetos</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Trajetória & Especializações
+            Trajetória & Formação
           </h2>
           <p className="text-gray-400 text-base sm:text-lg">
-            A união entre fundamentos acadêmicos em tecnologia e evolução constante em arquitetura de software moderna.
+            A união entre fundamentos de tecnologia no IFSC e a prática intensiva na criação de sistemas utilizando Inteligência Artificial.
           </p>
         </div>
 

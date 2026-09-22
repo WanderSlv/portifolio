@@ -11,7 +11,7 @@ import {
   Info
 } from 'lucide-react';
 
-const CATEGORIES = ['Todos', 'Full Stack', 'Back-End', 'IA & Automação', 'Desktop'] as const;
+const CATEGORIES = ['Todos', 'Sistemas & Web', 'Automações & Bots', 'Visão Computacional & IA', 'Desktop'] as const;
 
 export const Projects: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('Todos');
@@ -43,10 +43,10 @@ export const Projects: React.FC = () => {
             <span>Portfólio Prático</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Projetos & Aplicações em Destaque
+            Projetos & Aplicações Criadas com IA
           </h2>
           <p className="text-gray-400 text-base sm:text-lg">
-            Soluções completas abrangendo desde automações com Visão Computacional até aplicações Full Stack corporativas e microsserviços.
+            Aplicações funcionais, MVPs e automações construídas aliando direcionamento humano e velocidade de Inteligência Artificial.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export const Projects: React.FC = () => {
             <Search className="w-4 h-4 text-gray-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Buscar por tag, stack ou nome..."
+              placeholder="Buscar por tag, ferramenta ou nome..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-[#121522] border border-gray-800 rounded-xl pl-10 pr-4 py-2 text-xs sm:text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"

@@ -45,10 +45,10 @@ export const Contact: React.FC = () => {
             <span>Vamos nos Conectar</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Pronto para Construir Soluções Incríveis?
+            Tem uma Ideia, Projeto ou Oportunidade?
           </h2>
           <p className="text-gray-400 text-base sm:text-lg">
-            Estou disponível para projetos desafiadores, vagas de desenvolvimento de software e parcerias tecnológicas.
+            Estou disponível para conversar sobre criação de automações, prototipagem ágil com IA e parcerias em projetos.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export const Contact: React.FC = () => {
                   <GithubIcon className="w-6 h-6" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-400 font-mono">Repositórios & Código</div>
+                  <div className="text-xs text-gray-400 font-mono">Repositórios & Projetos</div>
                   <div className="text-white font-bold group-hover:text-purple-300 transition-colors">
                     github.com/WanderSlv
                   </div>
@@ -163,7 +163,7 @@ export const Contact: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="Ex: Ana Souza"
+                  placeholder="Ex: Carlos Oliveira"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full bg-[#181c2e] border border-gray-800 rounded-xl px-4 py-2.5 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-purple-500 transition-colors"
@@ -177,7 +177,7 @@ export const Contact: React.FC = () => {
                 <input
                   type="email"
                   required
-                  placeholder="Ex: ana@empresa.com"
+                  placeholder="Ex: carlos@empresa.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full bg-[#181c2e] border border-gray-800 rounded-xl px-4 py-2.5 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-purple-500 transition-colors"
@@ -186,12 +186,12 @@ export const Contact: React.FC = () => {
 
               <div>
                 <label className="block text-xs font-mono text-gray-400 mb-1">
-                  Mensagem ou Oportunidade
+                  Mensagem ou Ideia
                 </label>
                 <textarea
                   required
                   rows={4}
-                  placeholder="Descreva seu projeto, proposta ou ideia..."
+                  placeholder="Descreva sua ideia, projeto ou proposta..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full bg-[#181c2e] border border-gray-800 rounded-xl px-4 py-2.5 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-purple-500 transition-colors resize-none"

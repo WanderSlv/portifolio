@@ -8,11 +8,11 @@ import {
 } from 'lucide-react';
 
 const TYPING_PHRASES = [
-  'Desenvolvedor Full Stack',
-  'Java • Spring Boot • APIs RESTful',
-  'TypeScript • React • Next.js',
-  'Python • Automações • Visão IA',
-  'Construindo Soluções Escaláveis',
+  'Criador de Soluções com IA',
+  'Automações Inteligentes & Bots',
+  'Desenvolvimento Assistido por IA',
+  'Sistemas Web & Protótipos Ágeis',
+  'Transformando Ideias em Código',
 ];
 
 export const Hero: React.FC = () => {
@@ -100,7 +100,7 @@ export const Hero: React.FC = () => {
 
         {/* Bio summary */}
         <p className="max-w-2xl mx-auto text-base sm:text-lg text-gray-300 mb-8 leading-relaxed font-normal">
-          Desenvolvedor focado em transformar desafios em sistemas funcionais, seguros e elegantes. Especialista no ecossistema <span className="text-purple-300 font-semibold">Java / Spring Boot</span>, <span className="text-blue-300 font-semibold">React & TypeScript</span>, além de automações inteligentes e IA com <span className="text-yellow-300 font-semibold">Python</span>.
+          Utilizo o poder e a velocidade da <span className="text-purple-300 font-semibold">Inteligência Artificial</span> como catalisador para planejar, estruturar e dar vida a <span className="text-blue-300 font-semibold">aplicações web, sistemas comerciais e automações inteligentes</span> de forma ágil e orientada a resultados.
         </p>
 
         {/* Action Buttons */}
@@ -109,7 +109,7 @@ export const Hero: React.FC = () => {
             href="#projetos"
             className="inline-flex items-center gap-2 px-6 py-3.5 text-base font-semibold text-white bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 rounded-xl shadow-lg shadow-purple-600/30 hover:shadow-purple-500/50 hover:scale-105 transition-all"
           >
-            <span>Ver Projetos em Produção</span>
+            <span>Ver Projetos Criados com IA</span>
             <ArrowRight className="w-4 h-4" />
           </a>
 
@@ -144,8 +144,8 @@ export const Hero: React.FC = () => {
 
         {/* Quick Tech Badges */}
         <div className="pt-6 border-t border-gray-800/60 flex flex-wrap items-center justify-center gap-3 text-xs font-mono text-gray-400">
-          <span className="text-gray-400 font-semibold">Stack Principal:</span>
-          {['Java 21', 'Spring Boot 3', 'TypeScript', 'React 18', 'Node.js', 'Python', 'PostgreSQL', 'Docker', 'Tauri'].map((tech) => (
+          <span className="text-gray-400 font-semibold">Ecossistema & Ferramentas:</span>
+          {['Engenharia de Prompt', 'LLMs & Agentes IA', 'React', 'TypeScript', 'Node.js', 'Python', 'FastAPI', 'YOLOv8', 'Supabase', 'Tauri'].map((tech) => (
             <span
               key={tech}
               className="px-3 py-1 rounded-md bg-[#131622] border border-gray-800 text-gray-300 hover:border-purple-500/40 hover:text-purple-300 transition-colors"

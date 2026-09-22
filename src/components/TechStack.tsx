@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SKILL_CATEGORIES } from '../data/portfolioData';
-import { Server, Layout, Database, Cpu, Code2 } from 'lucide-react';
+import { Server, Layout, Database, Cpu, Bot } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = {
   Server,
@@ -18,14 +18,14 @@ export const TechStack: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-950/50 border border-blue-800/40 text-blue-400 text-xs font-mono uppercase tracking-wider mb-4">
-            <Code2 className="w-3.5 h-3.5" />
-            <span>Hard Skills & Ferramentas</span>
+            <Bot className="w-3.5 h-3.5" />
+            <span>Ferramentas & Tecnologias</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Stack Tecnológico & Competências
+            Tecnologias que Utilizo com IA
           </h2>
           <p className="text-gray-400 text-base sm:text-lg">
-            Ferramentas, linguagens e frameworks que utilizo no dia a dia para desenvolver sistemas de ponta a ponta.
+            Ecossistema de linguagens, frameworks e ferramentas que orquestro através de Inteligência Artificial para construir sistemas e automações.
           </p>
         </div>
 
@@ -64,9 +64,9 @@ export const TechStack: React.FC = () => {
                 </h4>
                 <span
                   className={`text-xs px-2.5 py-0.5 rounded-full font-mono font-medium ${
-                    skill.level === 'Especialista'
+                    skill.level === 'Prático'
                       ? 'bg-purple-950/80 text-purple-300 border border-purple-600/50'
-                      : skill.level === 'Avançado'
+                      : skill.level === 'Aplicado com IA'
                       ? 'bg-blue-950/80 text-blue-300 border border-blue-600/50'
                       : 'bg-emerald-950/80 text-emerald-300 border border-emerald-600/50'
                   }`}
@@ -84,15 +84,14 @@ export const TechStack: React.FC = () => {
         {/* All Skills Cloud Overview */}
         <div className="mt-16 p-8 rounded-2xl bg-[#121522]/60 border border-gray-800 text-center">
           <h4 className="text-sm font-mono text-gray-400 uppercase tracking-wider mb-6">
-            Visão Geral Integrada de Tecnologias
+            Visão Geral de Ferramentas & Stacks Experimentadas
           </h4>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
             {[
-              'Java 21', 'Spring Boot 3', 'Spring Data JPA', 'Spring Security', 'TypeScript',
-              'JavaScript ES6+', 'React 18', 'Next.js', 'Node.js', 'Express.js', 'Python 3',
-              'FastAPI', 'YOLOv8', 'OpenCV', 'EasyOCR', 'Tauri', 'Rust', 'PostgreSQL',
-              'Prisma ORM', 'Supabase', 'MySQL', 'SQLite', 'Docker', 'Vercel', 'Render',
-              'Git & GitHub', 'RESTful APIs', 'Clean Architecture', 'SOLID', 'Linux OS', 'Tailwind CSS'
+              'Engenharia de Prompt', 'LLMs & Agentes IA', 'TypeScript', 'React 18',
+              'Node.js', 'Express.js', 'Python', 'FastAPI', 'YOLOv8', 'OpenCV',
+              'EasyOCR', 'Tauri Desktop', 'Supabase', 'PostgreSQL', 'Prisma ORM',
+              'Docker', 'Web Scraping', 'Git & GitHub', 'Tailwind CSS', 'Vercel'
             ].map((tech, i) => (
               <span
                 key={i}

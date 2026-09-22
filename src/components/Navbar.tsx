@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './Icons';
-import { Menu, X, Code2, Sparkles } from 'lucide-react';
+import { Menu, X, Bot, Sparkles } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { label: 'Sobre', href: '#sobre' },
-    { label: 'Tecnologias', href: '#tecnologias' },
+    { label: 'Habilidades & IA', href: '#tecnologias' },
     { label: 'Projetos', href: '#projetos' },
     { label: 'Trajetória', href: '#trajetoria' },
     { label: 'Terminal', href: '#terminal' },
@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
           >
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 via-indigo-600 to-pink-500 p-[2px] shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform duration-200">
               <div className="w-full h-full bg-[#0e111a] rounded-[10px] flex items-center justify-center">
-                <Code2 className="w-5 h-5 text-purple-400 group-hover:text-pink-400 transition-colors" />
+                <Bot className="w-5 h-5 text-purple-400 group-hover:text-pink-400 transition-colors" />
               </div>
             </div>
             <div className="flex flex-col">
@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
                 wander.silva
               </span>
               <span className="text-[10px] text-gray-400 tracking-widest font-mono">
-                FULL STACK DEV
+                IA & AUTOMAÇÕES
               </span>
             </div>
           </a>

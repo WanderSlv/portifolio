@@ -15,7 +15,7 @@ export const InteractiveTerminal: React.FC = () => {
       type: 'output',
       text: (
         <div>
-          <p className="text-purple-400 font-bold">WanderOS v2.4.0 (x86_64-pc-linux-gnu)</p>
+          <p className="text-purple-400 font-bold">WanderOS AI-CLI v2.4.0</p>
           <p className="text-gray-400">Digite <span className="text-pink-400 font-semibold">help</span> para visualizar todos os comandos disponíveis.</p>
         </div>
       ),
@@ -52,10 +52,10 @@ export const InteractiveTerminal: React.FC = () => {
               <p className="text-purple-300 font-semibold mb-2">Comandos disponíveis:</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 font-mono text-xs">
                 <div><span className="text-pink-400">about</span> - Sobre Wander Silva</div>
-                <div><span className="text-pink-400">skills</span> - Listar principais tecnologias</div>
+                <div><span className="text-pink-400">skills</span> - Ferramentas e tecnologias utilizadas com IA</div>
                 <div><span className="text-pink-400">projects</span> - Listar projetos em destaque</div>
                 <div><span className="text-pink-400">contact</span> - Informações de contato direto</div>
-                <div><span className="text-pink-400">sudo hire</span> - Contratar Wander Silva 🎉</div>
+                <div><span className="text-pink-400">sudo hire</span> - Conectar com Wander Silva 🎉</div>
                 <div><span className="text-pink-400">clear</span> - Limpar o terminal</div>
                 <div><span className="text-pink-400">whoami</span> - Exibir usuário atual</div>
                 <div><span className="text-pink-400">matrix</span> - Efeito Matrix</div>
@@ -83,11 +83,10 @@ export const InteractiveTerminal: React.FC = () => {
           type: 'output',
           text: (
             <div className="space-y-2 text-xs">
-              <p className="text-purple-400 font-semibold">Tecnologias Dominadas:</p>
-              <p><span className="text-yellow-400 font-bold">☕ Back-End:</span> Java, Spring Boot 3, Spring Security, JPA/Hibernate, Node.js, Express, TypeScript, Python, FastAPI</p>
-              <p><span className="text-blue-400 font-bold">⚛️ Front-End:</span> React, Next.js, TypeScript, Tailwind CSS, Tauri (Desktop Rust)</p>
-              <p><span className="text-green-400 font-bold">🗄️ Bancos & Cloud:</span> PostgreSQL, Supabase, MySQL, SQLite, Docker, Vercel, Render</p>
-              <p><span className="text-pink-400 font-bold">🤖 IA & Automação:</span> YOLOv8, OpenCV, EasyOCR, Web Scraping, Linux, Git</p>
+              <p className="text-purple-400 font-semibold">Tecnologias & Ferramentas Utilizadas com IA:</p>
+              <p><span className="text-pink-400 font-bold">🤖 IA & Agentes:</span> Engenharia de Prompt, LLMs, Chatbots, YOLOv8, OpenCV, EasyOCR, Web Scraping</p>
+              <p><span className="text-blue-400 font-bold">⚛️ Front-End:</span> React, TypeScript, Tailwind CSS, Tauri (Desktop)</p>
+              <p><span className="text-green-400 font-bold">🗄️ Back-End & DB:</span> Node.js, Python, FastAPI, Supabase, PostgreSQL, Docker</p>
             </div>
           ),
         });
@@ -98,7 +97,7 @@ export const InteractiveTerminal: React.FC = () => {
           type: 'output',
           text: (
             <div className="space-y-2 text-xs">
-              <p className="text-purple-400 font-semibold">Projetos no Portfólio:</p>
+              <p className="text-purple-400 font-semibold">Projetos no Portfólio (Criados com IA):</p>
               {PROJECTS.map((p, i) => (
                 <div key={i} className="pl-2 border-l border-purple-500/40">
                   <span className="text-white font-bold">{p.title}</span> — <span className="text-gray-400">{p.subtitle}</span>
@@ -135,8 +134,8 @@ export const InteractiveTerminal: React.FC = () => {
             type: 'success',
             text: (
               <div className="p-3 bg-purple-950/60 border border-purple-500/60 rounded-lg text-xs space-y-1">
-                <p className="text-emerald-400 font-bold">🎉 ACESSO CONCEDIDO: Bem-vindo à equipe!</p>
-                <p className="text-gray-200">Excelente decisão! Wander Silva está pronto para impulsionar seus projetos.</p>
+                <p className="text-emerald-400 font-bold">🎉 CONEXÃO ESTABELECIDA!</p>
+                <p className="text-gray-200">Wander Silva está pronto para aplicar IA em projetos, protótipos e automações.</p>
                 <p className="text-purple-300">Envie um e-mail para <a href={`mailto:${PERSONAL_INFO.email}`} className="underline font-bold text-white">{PERSONAL_INFO.email}</a> ou mande uma mensagem no LinkedIn!</p>
               </div>
             ),
@@ -152,7 +151,7 @@ export const InteractiveTerminal: React.FC = () => {
       case 'whoami':
         newHistory.push({
           type: 'output',
-          text: 'visitante@wander-portfolio (Permissão: recrutador/tech-lead)',
+          text: 'visitante@wander-portfolio (Visitante / Recrutador / Parceiro)',
         });
         break;
 
@@ -218,7 +217,7 @@ export const InteractiveTerminal: React.FC = () => {
               <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
               <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
               <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
-              <span className="ml-2 text-xs text-gray-400">wander@dev-environment:~</span>
+              <span className="ml-2 text-xs text-gray-400">wander@ai-environment:~</span>
             </div>
             <button
               onClick={(e) => {
@@ -239,7 +238,7 @@ export const InteractiveTerminal: React.FC = () => {
               <div key={idx}>
                 {item.type === 'input' && (
                   <div className="flex items-center gap-2 text-purple-300">
-                    <span className="text-emerald-400">wander@arch:~$</span>
+                    <span className="text-emerald-400">wander@ai:~$</span>
                     <span>{item.text}</span>
                   </div>
                 )}
@@ -253,7 +252,7 @@ export const InteractiveTerminal: React.FC = () => {
 
             {/* Input Line */}
             <div className="flex items-center gap-2 text-purple-300 pt-1">
-              <span className="text-emerald-400 shrink-0">wander@arch:~$</span>
+              <span className="text-emerald-400 shrink-0">wander@ai:~$</span>
               <input
                 ref={inputRef}
                 type="text"
