@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Wander Silva - Portfólio & Apresentação Profissional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0d13;
+      color: #e2e8f0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      padding: 16mm 18mm;
+      position: relative;
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: radial-gradient(circle at top right, #1a162b 0%, #0b0d13 55%);
+    }
+    .page:last-child {
+      page-break-after: avoid;
+    }
+    .font-mono {
+      font-family: 'Fira Code', monospace;
+    }
+    .text-purple { color: #bd93f9; }
+    .text-pink { color: #ff79c6; }
+    .text-blue { color: #8be9fd; }
+    .text-green { color: #50fa7b; }
+    .text-yellow { color: #f1fa8c; }
+    .text-muted { color: #94a3b8; }
+    .card {
+      background: #121522;
+      border: 1px solid #23283e;
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .badge {
+      display: inline-block;
+      font-family: 'Fira Code', monospace;
+      font-size: 9px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      background: #181c2e;
+      border: 1px solid #2b324f;
+      color: #cbd5e1;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+    .badge-ai {
+      background: rgba(189, 147, 249, 0.15);
+      border-color: rgba(189, 147, 249, 0.4);
+      color: #bd93f9;
+    }
+    .badge-status {
+      background: rgba(80, 250, 123, 0.15);
+      border-color: rgba(80, 250, 123, 0.4);
+      color: #50fa7b;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #bd93f9;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 1px solid #1e2438;
+      padding-bottom: 4px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PÁGINA 1 ==================== -->
+  <div class="page">
+    <div>
+      <!-- Header -->
+      <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #282a36; padding-bottom: 14px; margin-bottom: 16px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <img src="https://avatars.githubusercontent.com/u/165096619?v=4" alt="Wander Silva" style="width: 64px; height: 64px; border-radius: 50%; border: 2px solid #bd93f9; object-fit: cover;">
+          <div>
+            <h1 style="font-size: 24px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">Wander Silva Andrade</h1>
+            <div style="font-size: 13px; font-weight: 600; color: #bd93f9; font-family: 'Fira Code', monospace; margin-top: 2px;">
+              Criador de Soluções, Automações & Sistemas com IA
+            </div>
+            <div style="font-size: 11px; color: #94a3b8; margin-top: 2px;">
+              Graduando em Engenharia de Telecomunicações (IFSC) • Santa Catarina, Brasil
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact block -->
+        <div style="text-align: right; font-size: 10px; font-family: 'Fira Code', monospace; color: #cbd5e1; line-height: 1.6;">
+          <div><strong style="color: #bd93f9;">Email:</strong> wandermaci3l@gmail.com</div>
+          <div><strong style="color: #8be9fd;">LinkedIn:</strong> linkedin.com/in/wander-silva-andrade</div>
+          <div><strong style="color: #ff79c6;">GitHub:</strong> github.com/WanderSlv</div>
+        </div>
+      </div>
+
+      <!-- Resumo Profissional -->
+      <div style="margin-bottom: 16px;">
+        <div class="section-title">
+          <span>🎯 Perfil & Abordagem com IA</span>
+        </div>
+        <div class="card" style="font-size: 11.5px; line-height: 1.55; color: #cbd5e1;">
+          Graduando em <strong style="color: #fff;">Engenharia de Telecomunicações no IFSC</strong>, utilizo o poder e a velocidade da <strong style="color: #bd93f9;">Inteligência Artificial</strong> (LLMs, Engenharia de Prompt e automações) para idealizar, prototipar e construir <strong style="color: #8be9fd;">sistemas comerciais funcionais, aplicações web, desktop e soluções com visão computacional</strong>. Foco em transformar regras de negócio e necessidades práticas em ferramentas eficientes e entregáveis.
+        </div>
+      </div>
+
+      <!-- Formação & Trajetória -->
+      <div style="margin-bottom: 16px;">
+        <div class="section-title">
+          <span>🎓 Formação Acadêmica & Aprendizado</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          
+          <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px;">
+              <strong style="font-size: 12.5px; color: #fff;">Engenharia de Telecomunicações</strong>
+              <span class="badge badge-status">Graduação (Em Andamento)</span>
+            </div>
+            <div style="font-size: 11px; color: #bd93f9; margin-bottom: 4px;">Instituto Federal de Santa Catarina (IFSC) — Santa Catarina, Brasil</div>
+            <div style="font-size: 10.5px; color: #94a3b8; line-height: 1.45;">
+              Sólida base em raciocínio analítico, sinais, redes de comunicação, algoritmos, lógica estruturada e sistemas de computação.
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px;">
+              <strong style="font-size: 12.5px; color: #fff;">Criação de Soluções & Automações com IA</strong>
+              <span class="badge badge-ai">2024 - Presente</span>
+            </div>
+            <div style="font-size: 11px; color: #8be9fd; margin-bottom: 4px;">Projetos Práticos & Prototipagem com IA</div>
+            <div style="font-size: 10.5px; color: #94a3b8; line-height: 1.45;">
+              Desenvolvimento de aplicações reais (AutoBot, controle veicular por visão computacional, crawlers de passagens e painéis corporativos).
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Competências & Tecnologias Aplicadas com IA -->
+      <div>
+        <div class="section-title">
+          <span>🛠️ Ferramentas & Tecnologias Utilizadas com IA</span>
+        </div>
+        <div class="grid-2">
+          
+          <div class="card">
+            <strong style="font-size: 11.5px; color: #bd93f9; display: block; margin-bottom: 5px;">🤖 IA & Automações</strong>
+            <div style="font-size: 10px; color: #94a3b8; line-height: 1.4; margin-bottom: 6px;">
+              Engenharia de Prompt, LLMs Generativas, Chatbots, YOLOv8 (Detecção de Objetos), OpenCV, EasyOCR, Web Scraping (Crawlers).
+            </div>
+            <div>
+              <span class="badge badge-ai">Prompt Engineering</span>
+              <span class="badge badge-ai">YOLOv8</span>
+              <span class="badge badge-ai">Chatbots</span>
+              <span class="badge badge-ai">Crawlers</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <strong style="font-size: 11.5px; color: #8be9fd; display: block; margin-bottom: 5px;">💻 Desenvolvimento & Interfaces</strong>
+            <div style="font-size: 10px; color: #94a3b8; line-height: 1.4; margin-bottom: 6px;">
+              React 18, TypeScript, Tailwind CSS, Tauri (Desktop Rust), Node.js, Python, FastAPI, Supabase, PostgreSQL, Docker, Git.
+            </div>
+            <div>
+              <span class="badge">React</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">Python / FastAPI</span>
+              <span class="badge">Tauri Desktop</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Página 1 -->
+    <div style="border-top: 1px solid #1e2438; padding-top: 8px; display: flex; justify-content: space-between; font-size: 9.5px; color: #64748b; font-family: 'Fira Code', monospace;">
+      <span>Wander Silva Andrade • Portfólio Profissional</span>
+      <span>Página 1 de 2</span>
+    </div>
+  </div>
+
+  <!-- ==================== PÁGINA 2 ==================== -->
+  <div class="page">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #282a36; padding-bottom: 8px; margin-bottom: 14px;">
+        <span style="font-size: 14px; font-weight: 700; color: #fff;">Wander Silva Andrade</span>
+        <span style="font-size: 10px; font-family: 'Fira Code', monospace; color: #bd93f9;">Projetos & Aplicações Desenvolvidas</span>
+      </div>
+
+      <!-- Projetos -->
+      <div class="section-title">
+        <span>🚀 Projetos em Destaque Criados com IA</span>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px;">
+        
+        <!-- Projeto 1 -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+            <strong style="font-size: 12px; color: #ffffff;">AutoBot — Plataforma de Venda de Veículos</strong>
+            <span class="badge badge-ai">Criado com IA</span>
+          </div>
+          <div style="font-size: 10.5px; color: #bd93f9; margin-bottom: 4px;">Catálogo dinâmico, CRM e automação comercial para concessionárias</div>
+          <p style="font-size: 10px; color: #94a3b8; line-height: 1.4; margin-bottom: 5px;">
+            Plataforma interativa com vitrine inteligente, filtros avançados (modelo, preço, ano), captura de propostas e painel administrativo para gestão de estoque.
+          </p>
+          <div>
+            <span class="badge">React 18</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Tailwind CSS</span>
+            <span class="badge">Supabase</span>
+            <span class="badge">github.com/WanderSlv/vendaDeVeiculos</span>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+            <strong style="font-size: 12px; color: #ffffff;">Visão Computacional & Reconhecimento de Placas</strong>
+            <span class="badge badge-ai">YOLOv8 + OpenCV</span>
+          </div>
+          <div style="font-size: 10.5px; color: #8be9fd; margin-bottom: 4px;">Detecção de veículos e leitura de placas com rede neural e FastAPI</div>
+          <p style="font-size: 10px; color: #94a3b8; line-height: 1.4; margin-bottom: 5px;">
+            MVP para controle de acesso autônomo. Processa imagens com YOLOv8 para identificação veicular, executa OCR de placas via EasyOCR e expõe API REST com FastAPI.
+          </p>
+          <div>
+            <span class="badge">Python</span>
+            <span class="badge">YOLOv8</span>
+            <span class="badge">FastAPI</span>
+            <span class="badge">OpenCV</span>
+            <span class="badge">github.com/WanderSlv/leituraDeCarro</span>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+            <strong style="font-size: 12px; color: #ffffff;">Sistema de Gestão Financeira Pessoal</strong>
+            <span class="badge badge-ai">Full Stack com IA</span>
+          </div>
+          <div style="font-size: 10.5px; color: #50fa7b; margin-bottom: 4px;">Controle de receitas, despesas, cartões e gráficos analíticos</div>
+          <p style="font-size: 10px; color: #94a3b8; line-height: 1.4; margin-bottom: 5px;">
+            Sistema completo com autenticação JWT, modelagem relacional com Prisma ORM e PostgreSQL, interface reativa com React e orquestração com Docker.
+          </p>
+          <div>
+            <span class="badge">Node.js</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">Prisma ORM</span>
+            <span class="badge">Docker</span>
+            <span class="badge">github.com/WanderSlv/financeiroPessoal</span>
+          </div>
+        </div>
+
+        <!-- Projeto 4 -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+            <strong style="font-size: 12px; color: #ffffff;">Sistema Desktop Corporativo de Gestão de Cargos</strong>
+            <span class="badge badge-ai">Tauri Desktop</span>
+          </div>
+          <div style="font-size: 10.5px; color: #ff79c6; margin-bottom: 4px;">Software corporativo nativo com Tauri (Rust), React e Supabase</div>
+          <p style="font-size: 10px; color: #94a3b8; line-height: 1.4; margin-bottom: 5px;">
+            Aplicativo desktop de alta performance para RH e liderança gerenciarem requisições de vagas com segurança Row Level Security (RLS) no Supabase.
+          </p>
+          <div>
+            <span class="badge">Tauri (Rust)</span>
+            <span class="badge">React</span>
+            <span class="badge">Supabase DB/Auth</span>
+            <span class="badge">github.com/WanderSlv/gestaoAberturaCargoQualita</span>
+          </div>
+        </div>
+
+        <!-- Projeto 5 -->
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+            <strong style="font-size: 12px; color: #ffffff;">Monitor & Robô de Passagens Aéreas</strong>
+            <span class="badge badge-ai">Automação Python</span>
+          </div>
+          <div style="font-size: 10.5px; color: #f1fa8c; margin-bottom: 4px;">Rastreamento periódico de tarifas e alertas automáticos</div>
+          <p style="font-size: 10px; color: #94a3b8; line-height: 1.4; margin-bottom: 5px;">
+            Crawler inteligente em Python para monitorar flutuações de preços em tempo real, persistir histórico em SQLite e disparar notificações imediatas.
+          </p>
+          <div>
+            <span class="badge">Python</span>
+            <span class="badge">Web Scraping</span>
+            <span class="badge">SQLite</span>
+            <span class="badge">Alertas HTML</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Diferenciais -->
+      <div class="card" style="background: rgba(189, 147, 249, 0.08); border-color: rgba(189, 147, 249, 0.3);">
+        <strong style="font-size: 11px; color: #bd93f9; display: block; margin-bottom: 4px;">⚡ Diferencial & Valor Agregado:</strong>
+        <p style="font-size: 10px; color: #cbd5e1; line-height: 1.45;">
+          Capacidade de transformar problemas reais em MVPs e softwares funcionais em tempo recorde utilizando IA, com visão orientada a negócio, usabilidade e aprendizado contínuo.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer Página 2 -->
+    <div style="border-top: 1px solid #1e2438; padding-top: 8px; display: flex; justify-content: space-between; font-size: 9.5px; color: #64748b; font-family: 'Fira Code', monospace;">
+      <span>Disponível para projetos & oportunidades • wandermaci3l@gmail.com</span>
+      <span>Página 2 de 2</span>
+    </div>
+  </div>
+
+</body>
+</html>
