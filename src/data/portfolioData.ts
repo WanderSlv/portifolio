@@ -56,6 +56,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     iconName: 'Cpu',
     skills: [
       { name: 'Engenharia de Prompt & IA Generativa', level: 'Prático', description: 'Uso avançado de LLMs para criação e arquitetura de código, automação de fluxos e resolução de problemas' },
+      { name: 'Agentes de IA & Extensões Chrome', level: 'Prático', description: 'Desenvolvimento de assistentes com Manifest V3, preenchimento inteligente de interfaces (Jira/Atlaskit) e skills canônicas' },
+      { name: 'Model Context Protocol (MCP) & Skills', level: 'Prático', description: 'Integração de ferramentas MCP para inspeção de fluxos conversacionais, bancos e diagnósticos automatizados' },
       { name: 'YOLOv8 & OpenCV', level: 'Aplicado com IA', description: 'Implementação assistida por IA para detecção veicular e processamento de imagens' },
       { name: 'Web Scraping & Bots', level: 'Aplicado com IA', description: 'Criação de robôs para monitoramento de tarifas aéreas e eventos em tempo real' },
       { name: 'Chatbots & Fluxos de Atendimento', level: 'Prático', description: 'Modelagem de conversas inteligentes e automação para captação de clientes' },
@@ -65,8 +67,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: 'Back-End & Bancos de Dados',
     iconName: 'Server',
     skills: [
-      { name: 'Node.js & TypeScript', level: 'Aplicado com IA', description: 'Construção de APIs RESTful, regras de negócio e integração com bancos relacionais' },
-      { name: 'Python & FastAPI', level: 'Aplicado com IA', description: 'Serviços de alta performance para pipelines de visão computacional e automações' },
+      { name: 'Node.js & Express', level: 'Prático', description: 'Construção de APIs RESTful, servidores locais para ferramentas de IA, webhooks e automações' },
+      { name: 'Python, CLI & Automações SSH', level: 'Prático', description: 'Scripts de diagnóstico em produção, ferramentas CLI com interfaces web nativas e sanitização LGPD' },
       { name: 'PostgreSQL & Supabase', level: 'Aplicado com IA', description: 'Persistência de dados, autenticação de usuários e controle de segurança' },
       { name: 'Java & Spring Boot', level: 'Em Exploração', description: 'Conceitos de POO, estudos em microsserviços e estruturação de APIs' },
     ],
@@ -87,13 +89,59 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: 'Git & GitHub', level: 'Prático', description: 'Versionamento de código, controle de histórico e publicação de projetos' },
       { name: 'Docker', level: 'Aplicado com IA', description: 'Subida e orquestração de bancos e serviços em containers' },
-      { name: 'Linux', level: 'Prático', description: 'Ambiente de desenvolvimento e execução de scripts' },
+      { name: 'Linux & SSH', level: 'Prático', description: 'Ambiente de desenvolvimento Linux, sessões SSH e execução de scripts em servidores' },
       { name: 'Deploy & Cloud (Vercel/Render)', level: 'Prático', description: 'Hospedagem rápida e publicação contínua de aplicações' },
     ],
   },
 ];
 
 export const PROJECTS: Project[] = [
+  {
+    id: 'jira-ai-assistant',
+    title: 'Jira AI Assistant — Automação de Chamados com IA',
+    subtitle: 'Preenchimento em 1 clique via Chrome Extension & IA Multimodal',
+    category: 'Automações & Bots',
+    description: 'Assistente inteligente que transforma relatos informais, prints e logs em chamados canônicos no Jira com 1 clique, integrando extensão Chrome Manifest V3, IA multimodal (Gemini/Ollama) e skill nativa.',
+    longDescription: 'O Jira AI Assistant foi concebido para eliminar o atrito na abertura e triagem de chamados técnicos. O sistema conta com servidor Express, suporte a múltiplos provedores de IA (Google Gemini e Ollama local offline) com análise de prints e imagens coladas via clipboard, e uma extensão robusta para Google Chrome (Manifest V3) que injeta dados diretamente no Jira em componentes complexos React-Select (Atlaskit) com polling assíncrono. Inclui ainda a skill canônica jira-card-creator e mais de 30 testes automatizados com Jest.',
+    tags: ['JavaScript', 'Chrome Extension', 'Node.js', 'Express', 'Google Gemini', 'Ollama', 'Jest', 'Tailwind CSS'],
+    techStack: ['JavaScript (ES6+)', 'Chrome Extension (Manifest V3)', 'Node.js', 'Express', 'Google Gemini AI', 'Ollama (Local LLMs)', 'React-Select / Atlaskit DOM Injection', 'Jest', 'Tailwind CSS'],
+    features: [
+      'Geração canônica de chamados técnicos no Jira com título, contexto, comportamento observado/esperado e análise técnica',
+      'Extensão Chrome Manifest V3 com preenchimento em 1 clique e polling assíncrono em campos React-Select (Atlaskit)',
+      'IA Multimodal com suporte a colagem de prints de tela (Ctrl + V), miniatura e upload de evidências visuais',
+      'Multi-provedor de IA com Google Gemini, Ollama local offline e fallback determinístico sem chave de API',
+      'Skill nativa para agentes de IA (jira-card-creator) e suíte completa de 30 testes automatizados com Jest',
+    ],
+    githubUrl: 'https://github.com/WanderSlv/jira-ai-assistant',
+    badge: 'Chrome Extension & IA',
+    stats: [
+      { label: 'Automação', value: '1-Click Jira Fill' },
+      { label: 'Extensão', value: 'Chrome Manifest V3' },
+    ],
+  },
+  {
+    id: 'analisa-log-ia',
+    title: 'Auxiliador em Análise de Log (analisa-log)',
+    subtitle: 'Diagnóstico acelerado de incidentes com IA, SSH e Web UI Local',
+    category: 'Automações & Bots',
+    description: 'Ferramenta CLI e UI inteligente para diagnóstico ágil de logs em ambientes de produção com IA, suporte a sessões SSH, sanitização LGPD em tempo real, memória de contexto e Obsidian.',
+    longDescription: 'Desenvolvido para times de suporte, operações e DevOps, o analisa-log automatiza a investigação de incidentes em servidores remotos sem necessidade de instalar dependências em produção. Permite análise direta via clipboard (-c) no SSH, integração com MCP (Model Context Protocol) para inspeção de fluxos conversacionais, sanitização automática de dados sensíveis (LGPD), interface gráfica local nativa em Python (analisa-log --ui) e Skill universal de IA (nina-log-analysis) com travas anti-loop e timeouts de segurança.',
+    tags: ['Python', 'CLI', 'Web UI', 'SSH', 'LGPD Sanitizer', 'MCP', 'IA & Agentes', 'Bash'],
+    techStack: ['Python 3', 'CLI & Shell Scripts', 'Servidor Web Nativo Python', 'Automação SSH / Pipe', 'Sanitizador Regex LGPD', 'Model Context Protocol (MCP)', 'Skill de IA Universal'],
+    features: [
+      'Modo Clipboard (-c) para leitura instantânea de logs no SSH sem tocar no servidor remoto',
+      'Interface Gráfica Web Local (analisa-log --ui) com comandos ao vivo e visualizador interativo',
+      'Sanitização em tempo real em conformidade com a LGPD (ofuscação de telefones, CPFs, tokens e nomes)',
+      'Skill universal de IA (nina-log-analysis) para extração cirúrgica de evidências em arquivos JSON, CSV e LOG',
+      'Mecanismos ativos de proteção: travas anti-loop no pipe, timeouts rígidos de execução e rotação preventiva de logs',
+    ],
+    githubUrl: 'https://github.com/WanderSlv/auxiliador-em-analise-de-log',
+    badge: 'CLI & IA de Produção',
+    stats: [
+      { label: 'Ambiente', value: 'SSH + CLI + Web UI' },
+      { label: 'Privacidade', value: 'LGPD Sanitizer Nativo' },
+    ],
+  },
   {
     id: 'autobot-veiculos',
     title: 'AutoBot — Plataforma de Venda de Veículos',

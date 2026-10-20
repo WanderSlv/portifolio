@@ -88,10 +88,11 @@ export const TechStack: React.FC = () => {
           </h4>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
             {[
-              'Engenharia de Prompt', 'LLMs & Agentes IA', 'TypeScript', 'React 18',
+              'Engenharia de Prompt', 'LLMs & Agentes IA', 'Google Gemini', 'Ollama (Local LLMs)',
+              'Chrome Extensions (Manifest V3)', 'Model Context Protocol (MCP)', 'TypeScript', 'React 18',
               'Node.js', 'Express.js', 'Python', 'FastAPI', 'YOLOv8', 'OpenCV',
               'EasyOCR', 'Tauri Desktop', 'Supabase', 'PostgreSQL', 'Prisma ORM',
-              'Docker', 'Web Scraping', 'Git & GitHub', 'Tailwind CSS', 'Vercel'
+              'Docker', 'Web Scraping', 'Git & GitHub', 'Tailwind CSS', 'Jest', 'Vercel'
             ].map((tech, i) => (
               <span
                 key={i}

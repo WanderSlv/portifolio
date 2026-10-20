@@ -1,4 +1,5 @@
 import React from 'react';
+import { PROJECTS } from '../data/portfolioData';
 import {
   Layers,
   Bot,
@@ -40,7 +41,7 @@ export const About: React.FC = () => {
   ];
 
   const stats = [
-    { value: '8+', label: 'Projetos Funcionais Criados com IA' },
+    { value: `${PROJECTS.length}+`, label: 'Projetos Funcionais Criados com IA' },
     { value: '100%', label: 'Foco em Resolver Problemas Reais' },
     { value: 'AI First', label: 'Prototipagem Ágil & Inovação' },
     { value: 'Contínuo', label: 'Evolução e Aprendizado' },

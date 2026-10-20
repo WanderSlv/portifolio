@@ -22,15 +22,20 @@ export const InteractiveTerminal: React.FC = () => {
     },
   ]);
 
-  const terminalEndRef = useRef<HTMLDivElement>(null);
+  const terminalBodyRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-
-  const scrollToBottom = () => {
-    terminalEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
-    scrollToBottom();
+    // Evita rolar a página no carregamento inicial
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    // Rola apenas o interior da janela do terminal sem mover a página
+    if (terminalBodyRef.current) {
+      terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
+    }
   }, [history]);
 
   const handleCommand = (cmdStr: string) => {
@@ -84,9 +89,9 @@ export const InteractiveTerminal: React.FC = () => {
           text: (
             <div className="space-y-2 text-xs">
               <p className="text-purple-400 font-semibold">Tecnologias & Ferramentas Utilizadas com IA:</p>
-              <p><span className="text-pink-400 font-bold">🤖 IA & Agentes:</span> Engenharia de Prompt, LLMs, Chatbots, YOLOv8, OpenCV, EasyOCR, Web Scraping</p>
+              <p><span className="text-pink-400 font-bold">🤖 IA & Agentes:</span> Engenharia de Prompt, LLMs (Gemini/Ollama), Chrome Extensions (Manifest V3), Model Context Protocol (MCP), Skills Canônicas, Chatbots, YOLOv8, OpenCV, Web Scraping</p>
               <p><span className="text-blue-400 font-bold">⚛️ Front-End:</span> React, TypeScript, Tailwind CSS, Tauri (Desktop)</p>
-              <p><span className="text-green-400 font-bold">🗄️ Back-End & DB:</span> Node.js, Python, FastAPI, Supabase, PostgreSQL, Docker</p>
+              <p><span className="text-green-400 font-bold">🗄️ Back-End & DB:</span> Node.js, Express, Python, FastAPI, CLI, SSH Automations, Supabase, PostgreSQL, Docker</p>
             </div>
           ),
         });
@@ -233,7 +238,10 @@ export const InteractiveTerminal: React.FC = () => {
           </div>
 
           {/* Terminal Screen Body */}
-          <div className="p-4 sm:p-6 min-h-[280px] max-h-[380px] overflow-y-auto space-y-3">
+          <div
+            ref={terminalBodyRef}
+            className="p-4 sm:p-6 min-h-[280px] max-h-[380px] overflow-y-auto space-y-3 scroll-smooth"
+          >
             {history.map((item, idx) => (
               <div key={idx}>
                 {item.type === 'input' && (
@@ -265,7 +273,6 @@ export const InteractiveTerminal: React.FC = () => {
                 spellCheck="false"
               />
             </div>
-            <div ref={terminalEndRef} />
           </div>
         </div>
       </div>
